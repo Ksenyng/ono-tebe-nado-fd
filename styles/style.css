@@ -9,16 +9,6 @@
   padding: 92px 50px 96px 50px;
 }
 
-.header__logo {
-  display: block;
-  width: 148px;
-  height: 105px;
-}
-
-.header__logo-image {
-  height: 100%;
-}
-
 .header__links-list {
   display: flex;
   flex-direction: row;
@@ -41,11 +31,20 @@
   list-style: none;
 }
 
+.header__logo {
+  display: block;
+  width: 148px;
+  height: 105px;
+}
+
+.header__logo-image {
+  height: 100%;
+}
+
 .address {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  height: 98px;
   font-size: 18px;
   font-style: normal;
   line-height: 24.3px;
@@ -53,7 +52,7 @@
 
 .header__address {
   justify-self: end;
-  width: 240px;
+  max-width: 240px;
 }
 
 .telephone {
@@ -95,7 +94,7 @@
   color: #fff;
   font-weight: bold;
   font-size: 100px;
-  line-height: 114.99px;
+  line-height: 115px;
   text-transform: uppercase;
 }
 
@@ -130,13 +129,12 @@
   flex-direction: row;
   justify-content: space-between;
   min-width: 1000px;
-  height: 51px;
+  min-height: 51px;
 }
 
 .cover__description-text {
   align-content: center;
   color: #fff;
-  font-weight: normal;
   font-size: 22px;
   line-height: 28px;
   text-transform: uppercase;
@@ -144,11 +142,10 @@
 }
 
 .bet-button {
-  width: 256px;
-  height: 51px;
+  min-width: 256px;
+  min-height: 51px;
   border: 1px solid #fff;
   color: #fff;
-  font-weight: normal;
   font-size: 22px;
   text-align: center;
   text-transform: uppercase;
@@ -177,7 +174,7 @@
 }
 
 .lots__card-list-item {
-  width: 334px;
+  min-width: 334px;
   min-height: 596px;
 }
 
@@ -219,9 +216,9 @@
   position: relative;
   padding: 48px 40px 0 40px;
   color: #fff;
-  font-weight: 700;
+  font-weight: bold;
   font-size: 22px;
-  font-style: bold;
+  line-height: 120%;
   text-decoration: underline;
   text-transform: uppercase;
 }
@@ -232,9 +229,7 @@
   align-content: end;
   padding: 0 40px 48px 40px;
   color: #fff;
-  font-weight: 400;
   font-size: 20px;
-  font-style: normal;
   line-height: 120%;
   text-decoration: none;
 }
@@ -309,7 +304,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 240px;
+  min-width: 240px;
   font-size: 18px;
   text-transform: lowercase;
   list-style: none;
